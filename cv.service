@@ -1,0 +1,11 @@
+[Unit]
+Description=cv_loop
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/cv/
+ExecStart=/home/pi/cv/cv_loop.sh
+
+[Install]
+WantedBy=multi-user.target
